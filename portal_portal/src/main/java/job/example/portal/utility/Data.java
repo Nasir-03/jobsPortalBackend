@@ -1,0 +1,45 @@
+package job.example.portal.utility;
+
+public class Data {
+    public static String getMessage(String otp) {
+        return "<!DOCTYPE html>\n"
+            + "<html lang=\"en\">\n"
+            + "<head>\n"
+            + "  <meta charset=\"UTF-8\">\n"
+            + "  <title>Your OTP Code</title>\n"
+            + "</head>\n"
+            + "<body style=\"margin:0; padding:0; font-family:Arial, sans-serif; background-color:#f4f4f4;\">\n"
+            + "  <table align=\"center\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"background-color:#f4f4f4; padding: 20px 0;\">\n"
+            + "    <tr>\n"
+            + "      <td>\n"
+            + "        <table align=\"center\" width=\"600\" cellpadding=\"0\" cellspacing=\"0\" style=\"background-color:#ffffff; border-radius:8px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);\">\n"
+            + "          <tr style=\"background-color:#0047ab;\">\n"
+            + "            <td style=\"padding: 20px; text-align: center; color:#ffffff; font-size: 24px;\">\n"
+            + "              job portal\n"
+            + "            </td>\n"
+            + "          </tr>\n"
+            + "          <tr>\n"
+            + "            <td style=\"padding: 30px; text-align: center;\">\n"
+            + "              <h2 style=\"color: #333333;\">Your One-Time Password (OTP)</h2>\n"
+            + "              <p style=\"font-size: 16px; color: #555555;\">Use the OTP below to verify your email address:</p>\n"
+            + "              <div style=\"font-size: 32px; font-weight: bold; margin: 20px 0; color:#0047ab;\">\n"
+            + otp + "\n" // ✅ dynamically insert OTP
+            + "              </div>\n"
+            + "              <p style=\"font-size: 14px; color: #777777;\">\n"
+            + "                This OTP is valid for the next 10 minutes. If you didn't request this code, please ignore this email.\n"
+            + "              </p>\n"
+            + "            </td>\n"
+            + "          </tr>\n"
+            + "          <tr>\n"
+            + "            <td style=\"padding: 20px; background-color: #f9f9f9; text-align: center; font-size: 12px; color: #aaaaaa;\">\n"
+            + "              &copy; 2025 Company Name. All rights reserved.\n"
+            + "            </td>\n"
+            + "          </tr>\n"
+            + "        </table>\n"
+            + "      </td>\n"
+            + "    </tr>\n"
+            + "  </table>\n"
+            + "</body>\n"
+            + "</html>\n";
+    }
+}
