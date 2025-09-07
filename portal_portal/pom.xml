@@ -68,11 +68,6 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.genie</groupId>
-			<artifactId>Dem</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
     <groupId>io.jsonwebtoken</groupId>
     <artifactId>jjwt-api</artifactId>
     <version>0.12.6</version>
