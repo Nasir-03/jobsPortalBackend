@@ -21,7 +21,7 @@ import job.example.portal.dto.UserDTO;
 import job.example.portal.service.UserService;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
 @Validated
 @RequestMapping("/users")
 public class UserController {
