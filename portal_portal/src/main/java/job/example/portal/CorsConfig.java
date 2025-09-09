@@ -5,6 +5,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import jakarta.websocket.DeploymentException;
+
 @Configuration
 public class CorsConfig {
 
@@ -16,8 +18,8 @@ public class CorsConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                             "http://localhost:5173",                    // local dev
-                            "https://job-portals-sowe.onrender.com"    // deployed frontend
-                        )
+                            "https://jobs-portals-obm8.onrender.com"   //Deploy frontend
+                        		)
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);  // 🔥 important if you send cookies or auth headers
